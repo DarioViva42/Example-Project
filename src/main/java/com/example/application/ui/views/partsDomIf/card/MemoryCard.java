@@ -46,8 +46,10 @@ public class MemoryCard extends AbstractPcPartCard {
 	}
 
 	public static String getTemplateString() {
-		return "<memory-card is='dom-if' if='[[item.isMemory]]'"
+		return "<template is='dom-if' if='[[item.isMemory]]'>"
+				+ "<memory-card"
 				+ " part-card='[[item.partCard]]'>"
-				+ "</memory-card>";
+				+ "</memory-card>"
+				+ "</template>";
 	}
 }

@@ -56,8 +56,10 @@ public class GraphicsCardCard extends AbstractPcPartCard {
 	}
 
 	public static String getTemplateString() {
-		return "<graphics-card-card is='dom-if' if='[[item.isGraphicsCard]]'"
+		return "<template is='dom-if' if='[[item.isGraphicsCard]]'>"
+				+ "<graphics-card-card"
 				+ " part-card='[[item.partCard]]'>"
-				+ "</graphics-card-card>";
+				+ "</graphics-card-card>"
+				+ "</template>";
 	}
 }
