@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.example.application.ui.views.partsComponent.PartsComponentView;
 import com.example.application.ui.views.partsDomIf.PartsDomIfView;
+import com.example.application.ui.views.partsDomIfElegant.PartsDomIfElegantView;
 import com.example.application.ui.views.partsFactory.PartsFactoryView;
 import com.example.application.ui.views.partsNoTemplate.PartsNoTemplateView;
 import com.vaadin.flow.component.Component;
@@ -113,17 +114,19 @@ public class MainLayout extends AppLayout {
 
     private List<RouterLink> createLinks() {
         MenuItemInfo[] menuItems = new MenuItemInfo[]{ //
-                new MenuItemInfo("Parts (only one template)", "la la-rocket", PartsOriginalView.class), //
+                new MenuItemInfo("Parts (only one template)", "la la-rocket", PartsOriginalView.class),
 
-                new MenuItemInfo("Parts (CardFactory)", "la la-lightbulb-o", PartsFactoryView.class), //
+                new MenuItemInfo("Parts (CardFactory)", "la la-lightbulb-o", PartsFactoryView.class),
 
-                new MenuItemInfo("Parts (dom-if)", "la la-road", PartsDomIfView.class), //
+                new MenuItemInfo("Parts (dom-if)", "la la-filter", PartsDomIfView.class),
 
-                new MenuItemInfo("Parts (no Template)", "la la-align-justify", PartsNoTemplateView.class), //
+                new MenuItemInfo("Parts (dom-if, more Elegant)", "la la-road", PartsDomIfElegantView.class),
+
+                new MenuItemInfo("Parts (no Template)", "la la-align-justify", PartsNoTemplateView.class),
 
                 new MenuItemInfo("Parts (alternative)", "la la-life-ring", PartsComponentView.class),
 
-                new MenuItemInfo("Card List (start.vaadin.com)", "la la-list", CardListView.class), //
+                new MenuItemInfo("Card List (start.vaadin.com)", "la la-list", CardListView.class),
         };
         List<RouterLink> links = new ArrayList<>();
         for (MenuItemInfo menuItemInfo : menuItems) {
