@@ -2,11 +2,7 @@ package com.example.application.ui.views.partsComponent.card;
 
 import com.example.application.model.Memory;
 import com.vaadin.flow.component.Tag;
-import com.vaadin.flow.component.formlayout.FormLayout;
-import com.vaadin.flow.component.html.Div;
-import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.textfield.TextField;
 
 @Tag("memory-component")
 public class MemoryCard extends AbstractPcPartCard {

@@ -4,7 +4,6 @@ import com.example.application.model.GraphicsCard;
 import com.vaadin.flow.component.Tag;
 import com.vaadin.flow.component.formlayout.FormLayout;
 import com.vaadin.flow.component.html.Span;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 
 import java.util.stream.Collectors;
 
