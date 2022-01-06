@@ -17,4 +17,8 @@ class PartsView extends PolymerElement {
     }
 }
 
+window._isEqualTo = function (one, other) {
+    return one == other;
+}
+
 customElements.define(PartsView.is, PartsView);
